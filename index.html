@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InvestorBytes Links</title>
+<link rel="icon" href="/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+<style>
+/* Layout: matches investorbytes.com — white masthead with logo, red band, outlined red-bordered link rows */
+:root{--bg:#f4f4f4;--white:#fff;--ink:#111;--muted:#5d5d63;--red:#e1252d;--redDark:#b81a21;--line:#e1252d;
+--brand:"Montserrat","Segoe UI",Arial,sans-serif;color-scheme:light}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--brand)}
+.top{background:var(--white);border-bottom:1px solid #e6e6e6}
+.in{max-width:520px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top .in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.logo-img{height:40px;width:auto;display:block}
+.brand .w{font-weight:500;font-size:24px;letter-spacing:-.02em}
+.brand .w b{color:var(--red);font-weight:700}
+.ed{border:1.5px solid var(--red);color:var(--ink);font-weight:500;font-size:13px;padding:6px 10px;white-space:nowrap}
+.band{background:linear-gradient(110deg,var(--red) 0%,var(--red) 55%,#c41d24 100%);color:#fff}
+.band .in{padding-block:30px 32px;display:flex;flex-direction:column;gap:10px}
+.kick{font-weight:300;font-size:18px;letter-spacing:.08em;text-transform:uppercase;margin:0}
+h1{font-weight:300;font-size:44px;line-height:1;letter-spacing:.01em;text-transform:uppercase;margin:0;text-wrap:balance}
+.band p.s{margin:4px 0 0;font-size:14px;line-height:1.5;color:#ffe1e2;max-width:40ch}
+.cats{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;font-weight:500;font-size:13px}
+.links .in{padding-block:24px 40px;display:flex;flex-direction:column;gap:12px}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+a.row{display:grid;grid-template-columns:36px 1fr 20px;align-items:center;gap:14px;padding:12px 16px;background:var(--white);border:1.5px solid var(--line);color:var(--ink);text-decoration:none;transition:background .15s,color .15s}
+a.row:hover{background:#fff5f5}
+a.row:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+a.row.primary{background:var(--red);color:#fff}
+a.row.primary:hover{background:var(--redDark)}
+a.row.primary .h{color:#ffe1e2}
+.ic{width:36px;height:36px;display:grid;place-items:center}
+.ic svg{width:26px;height:26px}
+.t{min-width:0;display:flex;flex-direction:column;gap:1px}
+.n{font-weight:600;font-size:15px}
+.h{color:var(--muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.arr{font-size:18px;color:var(--red)}
+.primary .arr{color:#fff}
+footer{text-align:center;color:var(--muted);font-size:12px;padding-top:8px}
+@media (max-width:380px){h1{font-size:36px}.logo-img{height:40px;width:auto;display:block}
+.brand .w{font-size:20px}}
+@media (prefers-reduced-motion:reduce){a.row{transition:none}}
+</style>
+</head>
+<body style="margin:0">
+<header class="top"><div class="in"><a class="brand" href="/" aria-label="InvestorBytes home"><img class="logo-img" src="/logo.png" alt="Investorbytes" width="1275" height="245"></a><span class="ed">Editions</span></div></header>
+<section class="band"><div class="in">
+ <p class="kick">Latest news &amp; updates</p>
+ <h1>InvestorBytes</h1>
+ <p class="s">Choose your edition</p>
+</div></section>
+<main class="links"><div class="in">
+ <ul>
+  <li><a class="row" href="/uk/"><span class="ic"><span style="font-weight:700;font-size:13px;color:#e1252d">UK</span></span><span class="t"><span class="n">InvestorBytes UK</span><span class="h">United Kingdom</span></span><span class="arr">&rarr;</span></a></li>
+  <li><a class="row" href="/eu/"><span class="ic"><span style="font-weight:700;font-size:13px;color:#e1252d">EU</span></span><span class="t"><span class="n">InvestorBytes EU</span><span class="h">Europe</span></span><span class="arr">&rarr;</span></a></li>
+  <li><a class="row" href="/uae/"><span class="ic"><span style="font-weight:700;font-size:13px;color:#e1252d">UAE</span></span><span class="t"><span class="n">InvestorBytes UAE</span><span class="h">United Arab Emirates</span></span><span class="arr">&rarr;</span></a></li>
+ </ul>
+ <footer>&copy; InvestorBytes</footer>
+</div></main>
+</body>
+</html>
